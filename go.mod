@@ -3,17 +3,15 @@ module github.com/catalystgo/kache
 go 1.22.0
 
 require (
+	github.com/catalystgo/tracerok v0.0.1
 	github.com/dgraph-io/ristretto v0.1.1
+	github.com/golang/mock v1.6.0
 	github.com/hashicorp/golang-lru v0.6.0
+	github.com/serialx/hashring v0.0.0-20200727003509-22c0c7ab6b1b
 	github.com/stretchr/testify v1.9.0
 	// github.com/catalystgo/metrics-go v1.6.18
 	// github.com/catalystgo/realtime-config-go v1.13.5
 	google.golang.org/grpc v1.52.0
-)
-
-require (
-	github.com/catalystgo/tracerok v0.0.1
-	github.com/golang/mock v1.6.0
 )
 
 require (
