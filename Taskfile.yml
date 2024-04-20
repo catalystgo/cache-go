@@ -1,0 +1,39 @@
+version: '3'
+
+tasks:
+  mock:
+    cmds:
+      - mockgen -package=mock -destination=./mock/registry.go -source=./cache/registry.go
+      - mockgen -package=mock -destination=./mock/cache.go -source=./cache/cache.go
+      # //go:generate mockgen -destination=./mock_test.go -package=cache_test github.com/catalystgo/realtime-config-go Client,Manager
+
+
+  format:
+    cmds:
+      - task: go_files
+        vars: { COMMAND: 'gofmt -w  {} +'}
+      - task: go_files
+        vars: { COMMAND: 'goimports -w  {} +'}
+
+  test:
+    cmds:
+      - go test -v -short -race -cover ./...
+
+  lint:
+    cmds:
+      - revive
+        -config revive.toml
+        -formatter friendly
+        -exclude ./mock
+        ./...
+
+## INTERNAL COMMANDS
+
+  go_files:
+    desc: "Return all .go files and run .COMMAND on them"
+    internal: true
+    cmds:
+     - find .
+        -name "*.go"
+        -not -path ./mock
+        -exec {{.COMMAND}};
