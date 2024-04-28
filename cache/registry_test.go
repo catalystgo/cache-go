@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/catalystgo/kache/cache"
-	"github.com/catalystgo/kache/mock"
+	"github.com/catalystgo/cache-go/cache"
+	"github.com/catalystgo/cache-go/mock"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -7,7 +7,7 @@ package mock
 import (
 	reflect "reflect"
 
-	cache "github.com/catalystgo/kache/cache"
+	cache "github.com/catalystgo/cache-go/cache"
 	gomock "github.com/golang/mock/gomock"
 )
 

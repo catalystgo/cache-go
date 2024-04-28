@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/catalystgo/kache/cache/twoqueue"
+	"github.com/catalystgo/cache-go/cache/twoqueue"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/catalystgo/kache/cache"
-	"github.com/catalystgo/kache/cache/metrics"
+	"github.com/catalystgo/cache-go/cache"
+	"github.com/catalystgo/cache-go/cache/metrics"
 	lru "github.com/hashicorp/golang-lru"
 )
 

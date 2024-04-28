@@ -1,4 +1,4 @@
-module github.com/catalystgo/kache
+module github.com/catalystgo/cache-go
 
 go 1.22.0
 
@@ -6,8 +6,6 @@ require (
 	github.com/dgraph-io/ristretto v0.1.1
 	github.com/hashicorp/golang-lru v0.6.0
 	github.com/stretchr/testify v1.9.0
-	// github.com/catalystgo/metrics-go v1.6.18
-	// github.com/catalystgo/realtime-config-go v1.13.5
 	google.golang.org/grpc v1.52.0
 )
 

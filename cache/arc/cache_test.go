@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/catalystgo/kache/cache/arc"
+	"github.com/catalystgo/cache-go/cache/arc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

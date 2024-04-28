@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/catalystgo/kache/cache"
-	"github.com/catalystgo/kache/cache/arc"
-	"github.com/catalystgo/kache/cache/lru"
-	"github.com/catalystgo/kache/cache/ristretto"
+	"github.com/catalystgo/cache-go/cache"
+	"github.com/catalystgo/cache-go/cache/arc"
+	"github.com/catalystgo/cache-go/cache/lru"
+	"github.com/catalystgo/cache-go/cache/ristretto"
 )
 
 func benchmarkParallelGet(b *testing.B, c cache.Cache, workers, iterations int) {
@@ -44,7 +44,7 @@ func benchmarkParallelGet(b *testing.B, c cache.Cache, workers, iterations int) 
 	}
 }
 
-// pkg: github.com/catalystgo/kache/cache
+// pkg: github.com/catalystgo/cache-go/cache
 // BenchmarkParallelGet/*lru.Cache_1-12                  16          65941646 ns/op          800095 B/op      99998 allocs/op
 // BenchmarkParallelGet/*lru.Cache_4-12                   4         264020145 ns/op         3200220 B/op     399999 allocs/op
 // BenchmarkParallelGet/*lru.Cache_8-12                   2         565829862 ns/op         6402508 B/op     800002 allocs/op
